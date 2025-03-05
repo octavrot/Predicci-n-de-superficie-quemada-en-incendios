@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e7b511abb1f66c04bca3d430676232a4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e7b511abb1f66c04bca3d430676232a4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e7b511abb1f66c04bca3d430676232a4 = L.map(
+                "map_e7b511abb1f66c04bca3d430676232a4",
+                {
+                    center: [40.18524410067381, -3.931510156676109],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b8c29cdc1a4cd3792b28b40ac297e2bc = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e7b511abb1f66c04bca3d430676232a4);
+        
+    
+            var marker_cluster_5aef248c298e680e2a5dfbe2206a40ba = L.markerClusterGroup(
+                {}
+            );
+            map_e7b511abb1f66c04bca3d430676232a4.addLayer(marker_cluster_5aef248c298e680e2a5dfbe2206a40ba);
+        
+    
+            var circle_marker_738122046873b3b42efe21bf7c488f68 = L.circleMarker(
+                [41.78044702867054, 2.647382421714312],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.423246963533519, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5aef248c298e680e2a5dfbe2206a40ba);
+        
+    
+        var popup_479d5119908f056879780ed90cf23467 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3d454c5006631ea0b1d8becd244fc0d = $(`<div id="html_d3d454c5006631ea0b1d8becd244fc0d" style="width: 100.0%; height: 100.0%;">Real: 6.42 ha   Predicho: 2.31 ha   Error: 4.11 ha   Causa: Fuego por accidente o negligencia</div>`)[0];
+                popup_479d5119908f056879780ed90cf23467.setContent(html_d3d454c5006631ea0b1d8becd244fc0d);
+            
+        
+
+        circle_marker_738122046873b3b42efe21bf7c488f68.bindPopup(popup_479d5119908f056879780ed90cf23467)
+        ;
+
+        
+    
+    
+            var circle_marker_d864c2b9836b9fea2f1d32493f8ae772 = L.circleMarker(
+                [42.34457956419541, 2.9816320836738908],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.883947890661512, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5aef248c298e680e2a5dfbe2206a40ba);
+        
+    
+        var popup_906989acc3539cb6cf6ab1c3329597ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_181166478cb0944ce58ad0c6f42578da = $(`<div id="html_181166478cb0944ce58ad0c6f42578da" style="width: 100.0%; height: 100.0%;">Real: 9.88 ha   Predicho: 3.58 ha   Error: 6.30 ha   Causa: Fuego por accidente o negligencia</div>`)[0];
+                popup_906989acc3539cb6cf6ab1c3329597ca.setContent(html_181166478cb0944ce58ad0c6f42578da);
+            
+        
+
+        circle_marker_d864c2b9836b9fea2f1d32493f8ae772.bindPopup(popup_906989acc3539cb6cf6ab1c3329597ca)
+        ;
+
+        
+    
+    
+            var circle_marker_07169cde1cfc5e2238f426418ec8af70 = L.circleMarker(
+                [41.319849091431635, -4.0227449334343],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.90875477931522, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5aef248c298e680e2a5dfbe2206a40ba);
+        
+    
+        var popup_55196f81804de447a11b6ca34236fab6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c428d08ecc766dd93e651cbacb9da86a = $(`<div id="html_c428d08ecc766dd93e651cbacb9da86a" style="width: 100.0%; height: 100.0%;">Real: 6.91 ha   Predicho: 2.42 ha   Error: 4.49 ha   Causa: Fuego por accidente o negligencia</div>`)[0];
+                popup_55196f81804de447a11b6ca34236fab6.setContent(html_c428d08ecc766dd93e651cbacb9da86a);
+            
+        
+
+        circle_marker_07169cde1cfc5e2238f426418ec8af70.bindPopup(popup_55196f81804de447a11b6ca34236fab6)
+        ;
+
+        
+    
+    
+            var circle_marker_768518e52c3a36c7d8caf013595eb961 = L.circleMarker(
+                [40.3754936204626, -5.611806381065884],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.9932517730102833, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5aef248c298e680e2a5dfbe2206a40ba);
+        
+    
+        var popup_44a35a39f8e361ee711253292b32dbe4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7897c66d669280217ec48e9a13d5b0d1 = $(`<div id="html_7897c66d669280217ec48e9a13d5b0d1" style="width: 100.0%; height: 100.0%;">Real: 0.99 ha   Predicho: 5.05 ha   Error: 4.05 ha   Causa: Fuego por causa desconocida</div>`)[0];
+                popup_44a35a39f8e361ee711253292b32dbe4.setContent(html_7897c66d669280217ec48e9a13d5b0d1);
+            
+        
+
+        circle_marker_768518e52c3a36c7d8caf013595eb961.bindPopup(popup_44a35a39f8e361ee711253292b32dbe4)
+        ;
+
+        
+    
+    
+            var circle_marker_cb72ea2cec870364c8eaa79771f03a6f = L.circleMarker(
+                [38.63736682550889, -6.795115799280103],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.398594934535208, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5aef248c298e680e2a5dfbe2206a40ba);
+        
+    
+        var popup_1a358b8c7e258c6ec4cb9adfb3141a84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9723cffa814680a5cc3e52c6a79aff7d = $(`<div id="html_9723cffa814680a5cc3e52c6a79aff7d" style="width: 100.0%; height: 100.0%;">Real: 6.40 ha   Predicho: 2.20 ha   Error: 4.20 ha   Causa: Fuego intencionado</div>`)[0];
+                popup_1a358b8c7e258c6ec4cb9adfb3141a84.setContent(html_9723cffa814680a5cc3e52c6a79aff7d);
+            
+        
+
+        circle_marker_cb72ea2cec870364c8eaa79771f03a6f.bindPopup(popup_1a358b8c7e258c6ec4cb9adfb3141a84)
+        ;
+
+        
+    
+    
+            var circle_marker_af84ed4e01f775be4c5ae39bf3f2a37b = L.circleMarker(
+                [42.99731460425004, -2.3770840984688593],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.129050210060545, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5aef248c298e680e2a5dfbe2206a40ba);
+        
+    
+        var popup_956fda415100be1ec16f19c9c6e7d0f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdd1f51ce860598c2a6a7ba2cbfd7450 = $(`<div id="html_cdd1f51ce860598c2a6a7ba2cbfd7450" style="width: 100.0%; height: 100.0%;">Real: 6.13 ha   Predicho: 1.71 ha   Error: 4.42 ha   Causa: Fuego intencionado</div>`)[0];
+                popup_956fda415100be1ec16f19c9c6e7d0f3.setContent(html_cdd1f51ce860598c2a6a7ba2cbfd7450);
+            
+        
+
+        circle_marker_af84ed4e01f775be4c5ae39bf3f2a37b.bindPopup(popup_956fda415100be1ec16f19c9c6e7d0f3)
+        ;
+
+        
+    
+    
+            var circle_marker_335b83b0b246f49afe973b09528b0a20 = L.circleMarker(
+                [38.270609855723414, -3.80749247147257],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.289288323000317, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5aef248c298e680e2a5dfbe2206a40ba);
+        
+    
+        var popup_c28529827708b1c1c2676f5208df6d16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ed393d8e5eeab93ee5d1592d14b3ee7 = $(`<div id="html_7ed393d8e5eeab93ee5d1592d14b3ee7" style="width: 100.0%; height: 100.0%;">Real: 8.29 ha   Predicho: 3.85 ha   Error: 4.44 ha   Causa: Fuego intencionado</div>`)[0];
+                popup_c28529827708b1c1c2676f5208df6d16.setContent(html_7ed393d8e5eeab93ee5d1592d14b3ee7);
+            
+        
+
+        circle_marker_335b83b0b246f49afe973b09528b0a20.bindPopup(popup_c28529827708b1c1c2676f5208df6d16)
+        ;
+
+        
+    
+    
+            var circle_marker_08d48ad8c926084a2c438663803a62ce = L.circleMarker(
+                [38.241522929651005, -5.155835140932822],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.311734809152915, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5aef248c298e680e2a5dfbe2206a40ba);
+        
+    
+        var popup_827c266457bfdbe8b318915f6ace0452 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3543623bc3dfcd31b77bab8adfe7a607 = $(`<div id="html_3543623bc3dfcd31b77bab8adfe7a607" style="width: 100.0%; height: 100.0%;">Real: 6.31 ha   Predicho: 2.04 ha   Error: 4.27 ha   Causa: Fuego por causa desconocida</div>`)[0];
+                popup_827c266457bfdbe8b318915f6ace0452.setContent(html_3543623bc3dfcd31b77bab8adfe7a607);
+            
+        
+
+        circle_marker_08d48ad8c926084a2c438663803a62ce.bindPopup(popup_827c266457bfdbe8b318915f6ace0452)
+        ;
+
+        
+    
+    
+            var circle_marker_0682a0a6b9e297dfb70a1cf8050fa79c = L.circleMarker(
+                [37.806618478396025, -3.10646681815969],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.602118820879701, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5aef248c298e680e2a5dfbe2206a40ba);
+        
+    
+        var popup_833fc59335559d9fad6c244fa3ecbd33 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79ccb0f8e82769e029105fe628eac795 = $(`<div id="html_79ccb0f8e82769e029105fe628eac795" style="width: 100.0%; height: 100.0%;">Real: 5.60 ha   Predicho: 1.24 ha   Error: 4.36 ha   Causa: Fuego por causa desconocida</div>`)[0];
+                popup_833fc59335559d9fad6c244fa3ecbd33.setContent(html_79ccb0f8e82769e029105fe628eac795);
+            
+        
+
+        circle_marker_0682a0a6b9e297dfb70a1cf8050fa79c.bindPopup(popup_833fc59335559d9fad6c244fa3ecbd33)
+        ;
+
+        
+    
+    
+            var circle_marker_5a5884ccdc72518d172df1c9f16bbf06 = L.circleMarker(
+                [41.97493699597403, -6.703538426787882],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.707110264748875, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5aef248c298e680e2a5dfbe2206a40ba);
+        
+    
+        var popup_b8175e862f407ca96c337879bb90f2f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01c887c70af12c4fc85889cdc3d41091 = $(`<div id="html_01c887c70af12c4fc85889cdc3d41091" style="width: 100.0%; height: 100.0%;">Real: 5.71 ha   Predicho: 1.29 ha   Error: 4.41 ha   Causa: Fuego intencionado</div>`)[0];
+                popup_b8175e862f407ca96c337879bb90f2f6.setContent(html_01c887c70af12c4fc85889cdc3d41091);
+            
+        
+
+        circle_marker_5a5884ccdc72518d172df1c9f16bbf06.bindPopup(popup_b8175e862f407ca96c337879bb90f2f6)
+        ;
+
+        
+    
+    
+            var circle_marker_9cac37878fe462cb6df83a383a82fcb8 = L.circleMarker(
+                [42.72294489104437, -8.24985272456495],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.2166061010848646, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5aef248c298e680e2a5dfbe2206a40ba);
+        
+    
+        var popup_50a26202430d85d2cc29b1c4b9f248c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b3b9e77f88149eadebd569ece0d817b = $(`<div id="html_0b3b9e77f88149eadebd569ece0d817b" style="width: 100.0%; height: 100.0%;">Real: 6.22 ha   Predicho: 1.82 ha   Error: 4.40 ha   Causa: Fuego intencionado</div>`)[0];
+                popup_50a26202430d85d2cc29b1c4b9f248c8.setContent(html_0b3b9e77f88149eadebd569ece0d817b);
+            
+        
+
+        circle_marker_9cac37878fe462cb6df83a383a82fcb8.bindPopup(popup_50a26202430d85d2cc29b1c4b9f248c8)
+        ;
+
+        
+    
+    
+            var circle_marker_5d46bad97fdd622a5b56ad3a28f3b388 = L.circleMarker(
+                [37.81898590202064, -7.164792562351889],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.475120414994329, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5aef248c298e680e2a5dfbe2206a40ba);
+        
+    
+        var popup_18b1b2230be05e1d274a636754dd9ebc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f5b34f82e2189dec42d67d8675127fb = $(`<div id="html_3f5b34f82e2189dec42d67d8675127fb" style="width: 100.0%; height: 100.0%;">Real: 8.48 ha   Predicho: 1.18 ha   Error: 7.30 ha   Causa: Fuego por causa desconocida</div>`)[0];
+                popup_18b1b2230be05e1d274a636754dd9ebc.setContent(html_3f5b34f82e2189dec42d67d8675127fb);
+            
+        
+
+        circle_marker_5d46bad97fdd622a5b56ad3a28f3b388.bindPopup(popup_18b1b2230be05e1d274a636754dd9ebc)
+        ;
+
+        
+    
+    
+            var circle_marker_dfd79f0925fa230cc3039ae71bd4799b = L.circleMarker(
+                [38.11750352143103, -3.743917185658664],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0909098220799835, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5aef248c298e680e2a5dfbe2206a40ba);
+        
+    
+        var popup_3bb6d2ad5ed60017523c0f1dfa36f3b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab42ce1aab4bdb10299489cff8a79355 = $(`<div id="html_ab42ce1aab4bdb10299489cff8a79355" style="width: 100.0%; height: 100.0%;">Real: 7.09 ha   Predicho: 2.51 ha   Error: 4.58 ha   Causa: Fuego por causa desconocida</div>`)[0];
+                popup_3bb6d2ad5ed60017523c0f1dfa36f3b4.setContent(html_ab42ce1aab4bdb10299489cff8a79355);
+            
+        
+
+        circle_marker_dfd79f0925fa230cc3039ae71bd4799b.bindPopup(popup_3bb6d2ad5ed60017523c0f1dfa36f3b4)
+        ;
+
+        
+    
+</script>
+</html>
