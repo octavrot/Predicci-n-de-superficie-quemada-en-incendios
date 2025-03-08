@@ -10,7 +10,7 @@ This study applies neural networks to model and predict the burned area based on
 
 We developed a Multilayer Perceptron (MLP) regression model, optimizing its architecture through hyperparameter tuning and cross-validation.
 
-We include the Jupyter Notebook corresponding to our work.
+We include the Jupyter Notebook (incendios-2.ipynb) corresponding to our work.
 
 
 ## Methodology
