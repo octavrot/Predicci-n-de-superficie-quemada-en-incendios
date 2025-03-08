@@ -31,7 +31,7 @@ The study follows these steps:
    - Performance metrics: **MSE** (Mean Squared Error) and **R²** (Coefficient of Determination).
    - Error visualization and prediction analysis.
 
-## 📊 Results
+## Results
 
 - The model achieved an **R² = 0.58**, meaning it explains **58% of the variance** in the data.
 - Key factors influencing wildfire spread include:
